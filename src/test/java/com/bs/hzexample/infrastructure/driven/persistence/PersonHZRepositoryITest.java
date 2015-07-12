@@ -4,7 +4,6 @@ import com.bs.hzexample.config.HZConfig;
 import com.bs.hzexample.domain.person.Email;
 import com.bs.hzexample.domain.person.Person;
 import com.bs.hzexample.domain.person.PersonId;
-import com.bs.hzexample.domain.person.PersonRepository;
 import com.bs.hzexample.infrastructure.driven.PersonFixture;
 import org.hamcrest.Matchers;
 import org.junit.Test;
@@ -23,7 +22,7 @@ import static org.junit.Assert.assertThat;
 public class PersonHZRepositoryITest {
 
     @Autowired
-    private PersonRepository personRepository;
+    private PersonHZRepository personRepository;
 
     @Test
     public void saveStoresDomainObject() throws Exception {
